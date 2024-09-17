@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Filmes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Catálogo de Filmes</h1>
+    </header>
+
+    <nav>
+        <button onclick="showForm()">Cadastrar Novo Filme</button>
+        <button onclick="showSearch()">Buscar Filme</button>
+        <button onclick="showAll()">Exibir Todos os Filmes</button>
+    </nav>
+
+    <main>
+        <section id="form-section" class="hidden">
+            <h2>Cadastrar Filme</h2>
+            <form id="film-form">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" required>
+                <label for="classificacao">Classificação:</label>
+                <input type="text" id="classificacao" required>
+                <label for="duracao">Duração (min):</label>
+                <input type="number" id="duracao" required>
+                <label for="genero">Gênero:</label>
+                <input type="text" id="genero" required>
+                <label for="ano">Ano:</label>
+                <input type="number" id="ano" required>
+                <label for="sinopse">Sinopse:</label>
+                <textarea id="sinopse" required></textarea>
+                <button type="button" onclick="addFilm()">Adicionar Filme</button>
+            </form>
+        </section>
+
+        <section id="search-section" class="hidden">
+            <h2>Buscar Filme</h2>
+            <input type="text" id="search-name" placeholder="Digite o nome do filme">
+            <button onclick="searchFilm()">Buscar</button>
+            <div id="search-result"></div>
+        </section>
+
+        <section id="all-films-section" class="hidden">
+            <h2>Todos os Filmes</h2>
+            <div id="film-list"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Catálogo de Filmes. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
