@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V2.Potion</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+    <h1>Catálogo de Filmes</h1>
+
+
+    <div>
+        <h2>Cadastrar Filme</h2>
+        <label for="nome">Nome do filme:</label>
+        <input type="text" id="nome">
+
+
+        <label for="classificacao">Classificação indicativa:</label>
+        <input type="text" id="classificacao">
+
+
+        <label for="duracao">Duração (min):</label>
+        <input type="number" id="duracao" >
+
+
+        <label for="genero">Gênero:</label>
+        <input type="text" id="genero" >
+
+
+        <label for="ano">Ano de lançamento:</label>
+        <input type="number" id="ano" >
+
+
+        <label for="sinopse">Sinopse:</label>
+        <textarea id="sinopse" rows="4" ></textarea>
+
+        <label for="trailer">Trailer:</label>
+        <textarea id="trailer" ></textarea>
+
+
+        <button onclick="cadastrarFilme()">Cadastrar Filme</button>
+        <button onclick="atualizarFilme()" id="btn-atualizar" style="display:none;">Atualizar Filme</button>
+    </div>
+
+
+    <div>
+        <h2>Buscar Filme por Nome</h2>
+        <input type="text" id="busca">
+        <button onclick="buscarFilme()">Buscar</button>
+    </div>
+
+
+    <div>
+        <h2>Todos os Filmes Cadastrados</h2>
+        <button onclick="listarFilmes()">Exibir Todos os Filmes</button>
+
+
+        <div id="lista-filmes" class="filmes-lista"></div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
