@@ -4,11 +4,20 @@ body {
     background-color: #f5f5f5;
     margin: 50px;
 }
+header{
+    margin: 50px;
+}
+div{
+    color: gray;
 
+}
 
 h1 {
     color: #333;
+     text-shadow: 0px 0px 5px #638253;
+     margin: 0;
 }
+     
 
 
 label {
@@ -29,7 +38,7 @@ input, textarea {
 
 button {
     padding: 10px 15px;
-    background-color: #28a745;
+    background-color: gray;
     color: white;
     border: none;
     border-radius: 5px;
@@ -71,4 +80,16 @@ button:hover {
 
 .actions {
     margin-top: 10px;
+}
+footer{
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 2px 2px 0px rgba(64, 116, 181, 1), 
+                 2px -2px 0px rgba(64, 116, 181, 1), 
+                 -2px 2px 0px rgba(64, 116, 181, 1), 
+                 -2px -2px 0px rgba(64, 116, 181, 1), 
+                 2px 0px 0px rgba(64, 116, 181, 1), 
+                 0px 2px 0px rgba(64, 116, 181, 1), 
+                 -2px 0px 0px rgba(64, 116, 181, 1), 
+                 0px -2px 0px rgba(64, 116, 181, 1);
+    
 }
